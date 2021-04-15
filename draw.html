@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: peachpuff;
+        }
+        .dot {
+            height:200px;
+            width: 200px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="550" height="350" style="border:5px solid aqua;">
+        your browser does not support the HTML canvas tag.</canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(93, 53, 43, 3, 5 * Math.PI);
+        ctx.stroke();
+    </script>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Web Design", 90, 250);
+    </script>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(400,600);
+        ctx.stroke();
+    </script>
+    <br>
+    <span class="dot"></span>
+</body>
+</html>
